@@ -8,4 +8,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angularfooddelivery';
+
+  isEnabled:boolean = false; 
+clicked(){ }
+
+newrest:any;
+newRestAdded(newrest:any){
+  console.log(newrest)
+  this.newrest = newrest;
+}
 }

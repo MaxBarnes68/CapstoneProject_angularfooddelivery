@@ -1,0 +1,53 @@
+<h3>Add New Restaurant</h3>
+
+<div>
+    <form #restaurantform="ngForm" (submit)="saveRestaurant()">
+        <input type="text"
+        class="form-control"
+        [class.is-invalid]="rid.invalid && rid.touched"
+        name="rid"
+        [(ngModel)]="rest.rid"
+        required
+        #rid="ngModel"
+        placeholder="Enter RID...">
+        <div *ngIf="rid.invalid && rid.touched" class="invalid-feedback">
+            ID is required and must be unique.
+        </div>
+        <input type="text" 
+        class="form-control" 
+        [class.is-invalid]="name.invalid && name.touched" 
+        name="name" 
+        [(ngModel)]="rest.name"
+        required 
+        #name="ngModel" 
+        placeholder="Enter name...">
+        <div *ngIf="name.invalid && name.touched" class="invalid-feedback">
+            Name is required.
+        </div>
+        <input type="text"
+        class="form-control"
+        [class.is-invalid]="description.invalid && description.touched"
+        name="description"
+        [(ngModel)]="rest.description"
+        required
+        #description="ngModel"
+        placeholder="Enter description...">
+        <div *ngIf="description.invalid && description.touched" class="invalid-feedback">
+            Description is required.
+        </div>
+        <input type="text"
+        class="form-control"
+        [class.is-invalid]="sigdish.invalid && sigdish.touched"
+        name="sigdish"
+        [(ngModel)]="rest.sigdish"
+        required
+        #sigdish="ngModel"
+        placeholder="Enter signature dish...">
+        <div *ngIf="sigdish.invalid && sigdish.touched" class="invalid-feedback">
+            Signature dish is required.
+        </div>
+        <div class="mb-3">
+            <button type="submit" class="btn btn-primary">Add Restaurant</button>
+        </div>
+    </form>
+</div>

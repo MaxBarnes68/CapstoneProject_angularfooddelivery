@@ -1,0 +1,62 @@
+{
+  "users": [
+    {
+      "username": "abc",
+      "password": "abc123",
+      "id": "72de"
+    },
+    {
+      "username": "pqr",
+      "password": "pqr123",
+      "id": "252a"
+    },
+    {
+      "username": "user",
+      "password": "user123",
+      "id": "2fee"
+    },
+    {
+      "id": "f40c",
+      "username": "abc",
+      "password": "abc123"
+    }
+  ],
+  "restaurants": [
+    {
+      "rid": 1,
+      "name": "KFC",
+      "description": "KFC is an American fast food restaurant chain headquartered in Louisville, Kentucky, that specializes in fried chicken.",
+      "sigdish": "Fried Chicken and Wings",
+      "id": "1",
+      "navigationId": 2
+    },
+    {
+      "rid": 2,
+      "name": "Dominos",
+      "description": "Domino's Pizza, Inc., branded as Domino's, is an American multinational pizza restaurant chain founded in 1960.",
+      "sigdish": "Big Mac",
+      "id": "2"
+    },
+    {
+      "rid": 3,
+      "name": "Burger King",
+      "description": "Burger King is an American multinational chain of hamburger fast food restaurants.",
+      "sigdish": "Pizza",
+      "id": "3"
+    },
+    {
+      "rid": 4,
+      "name": "Subway",
+      "description": "Subway is an American privately held restaurant franchise that primarily sells submarine sandwiches (subs) and salads. It is one of the fastest-growing franchises in the world and, as of October 2019, had 41,512 locations in more than 100 countries.",
+      "sigdish": "Sub Sandwiches",
+      "id": "4"
+    },
+    {
+      "id": "5",
+      "rid": "5",
+      "name": "Phils pizzeria",
+      "description": "Greatest pizza and pasta in italy",
+      "sigdish": "pizza and pasta"
+    }
+  ]
+}
